@@ -1,5 +1,5 @@
 ```
-git clone https://github.com/erankitsrivastava/magento2-excludesearch-and-redirect.git app/code/
+git clone https://github.com/erankitsrivastava/magento2-excludesearch-and-redirect.git app/code/Epurnima/ExcludeSearch/
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy -f
