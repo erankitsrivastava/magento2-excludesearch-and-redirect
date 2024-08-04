@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
+    <system>
+        <section id="exclude_search" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Exclude Search Keywords</label>
+            <tab>catalog</tab>
+            <resource>Epurnima_ExcludeSearch::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="keyword_url_pairs" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Keyword-URL Pairs</label>
+                    <frontend_model>Epurnima\ExcludeSearch\Block\Adminhtml\System\Config\Form\Field\KeywordUrlPairs</frontend_model>
+                    <backend_model>Epurnima\ExcludeSearch\Model\Config\Backend\Serialized</backend_model>
+                    <comment>Enter keyword-URL pairs.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
